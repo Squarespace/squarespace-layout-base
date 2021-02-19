@@ -1,10 +1,9 @@
 {
-  "extends": "eslint-config-squarespace/vanilla",
-  "parser": "babel-eslint",
+  "extends": "eslint-config-squarespace",
+  "parserOptions": {
+    "sourceType": "module"
+  },
   "env": {
-    "browser": true,
-    "node": true,
-    "es6": true,
     "mocha": true
   }
 }
