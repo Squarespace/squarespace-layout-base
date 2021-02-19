@@ -10,7 +10,7 @@
     "build": "rimraf dist && mkdir dist && npm run lint && babel src/index.js -o dist/index.js",
     "watch": "npm run build && babel src/index.js --watch -o dist/index.js",
     "lint": "eslint src/index.js",
-    "prepublish": "npm run build && npm run cover",
+    "prepublish": "npm run build",
     "test": "mocha --require @babel/register"
   },
   "dependencies": {
@@ -27,7 +27,7 @@
     "babel-plugin-add-module-exports": "^1.0.4",
     "chai": "^4.3.0",
     "eslint": "^7.19.0",
-    "eslint-config-squarespace": "^1.0.0",
+    "eslint-config-squarespace": "^2.0.0",
     "mocha": "^8.2.1",
     "jsdom": "^9.8.3",
     "rimraf": "^3.0.2"
